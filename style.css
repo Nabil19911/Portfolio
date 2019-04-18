@@ -9,27 +9,31 @@
 #b_img
 {
 	background-image:url("image/Background_image.png");
-	background-size: contain;
+	background-size: 65%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: fixed;
 
-	width: 50vw;
+	width: 50%;
 	height: 100vh;
+	float: left;
+	margin-left: 5%; 
 }
 
 #contant_right
 {
-	width: 50vw;
-	position: absolute;
-	top: 250px;
-	right: 50px;
+	width: 50%;
+	float: right;
+	margin: -25% auto;
+	/* position: absolute;
+	top: 25%;
+	right: 5%; */
 
 }
 
 #contant_right p
 {
 	padding: 5px;
-	font-size: 36px;
+	font-size: 400%;
 }
 
 #bgcolor
@@ -40,64 +44,22 @@
 }
 
 /* header media query */
-
-@media screen and (max-width: 450px){
+@media screen and (max-width:1050px){
 	#b_img {
-		width: 100vw;
-		background-size: 275px;
-		background-position: 50px 50px;
+		width: 100%;
+		clear: both;
+		margin: auto;
+		background-position: 100px 60px;
 	}
-	#contant_right {
-		width: 100vw;
-		text-align: center;
+	#contant_right{
+		width: 100%;
+		
+		clear: both;
+		position: relative;
+		text-align:center;
 	}
 	#contant_right p {
-		width:100%;
-		font-size: 35px;
-		text-align: center;
-		position: absolute;
-		top:250px;
-		left:50px;
-		line-height: 45px;
-	}
-}
-@media screen and (max-width: 400px){
-	#b_img {
-		width: 100vw;
-		background-size: 250px;
-		background-position: 50px 50px;
-	}
-	#contant_right {
-		width: 100vw;
-		text-align: center;
-	}
-	#contant_right p {
-		width:100%;
-		font-size: 30px;
-		text-align: center;
-		position: absolute;
-		top:225px;
-		left:50px;
-		line-height: 45px;
-	}
-}
-@media screen and (max-width: 350px){
-	#b_img {
-		width: 100vw;
-		background-size: 200px;
-		background-position: 50px 50px;
-	}
-	#contant_right {
-		width: 100vw;
-		text-align: center;
-	}
-	#contant_right p {
-		width:100%;
-		font-size: 28px;
-		text-align: center;
-		position: absolute;
-		top:150px;
-		left:50px;
-		line-height: 40px;
+		font-size: 500%;
+		padding: 0;
 	}
 }
