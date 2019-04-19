@@ -44,17 +44,41 @@
 }
 
 /* header media query */
+
+/* Ipad Pro */
+@media screen and (max-width:1375px){
+	#b_img {
+		width: 50%;
+		background-size: 85%;
+		clear: both;
+		margin: auto;
+		background-position: 100px 60px;
+	}
+	#contant_right{
+		width: 50%;
+		clear: both;
+		position: relative;
+		text-align:center;
+	}
+	#contant_right p {
+		font-size: 300%;
+		padding: 0;
+		margin: -25% auto;
+		line-height: 125%;
+	}
+}
 @media screen and (max-width:1050px){
 	#b_img {
 		width: 100%;
+		background-size: 65%;
 		clear: both;
 		margin: auto;
 		background-position: 100px 60px;
 	}
 	#contant_right{
 		width: 100%;
-		
 		clear: both;
+		margin: 0;
 		position: relative;
 		text-align:center;
 	}
@@ -63,3 +87,7 @@
 		padding: 0;
 	}
 }
+
+
+/* Ipad */
+
