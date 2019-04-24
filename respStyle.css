@@ -71,7 +71,7 @@
 	#b_img {
 		width: 50%;
 		background-size: 50%;
-		background-position: center
+		background-position: center;
 	}
 	#contant_right{
 		width: 50%;
@@ -84,11 +84,11 @@
 		line-height: 130%;
 	}
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
 	#b_img {
 		width: 100%;
-		background-size: 100%;
-		background-position: 0 60px;
+		background-size: 90%;
+		background-position: 40% 10%;
 	}
 	#contant_right{
 		width: 100%;
@@ -98,5 +98,20 @@
 	#contant_right p {
 		font-size: 200%;
 		line-height: 130%;
+	}
+}
+
+/* Iphone6/7/8plus */
+@media screen and (max-width:750px) and (orientation:landscape) {
+	#b_img {
+		width: 50%;
+		background-size: 70%;
+		background-position: 10px;
+	}
+	#contant_right{
+		width: 60%;
+	}
+	#contant_right p {
+		font-size: 230%;
 	}
 }
